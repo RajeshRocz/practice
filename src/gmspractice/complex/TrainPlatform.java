@@ -97,6 +97,7 @@ public class TrainPlatform {
             }
 
         }
+
         return maxPlatforms;
     }
 
