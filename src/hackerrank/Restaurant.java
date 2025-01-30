@@ -108,10 +108,10 @@ class Item {
     }
 
     public void rateItem(int rattingValue) {
-        if (isInStock) {
+
             rattingCount++;
             rattingTotal += rattingValue;
-        }
+
     }
 
     public double getAverageRatting() {
