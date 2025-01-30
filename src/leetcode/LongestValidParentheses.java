@@ -3,8 +3,11 @@ package leetcode;
 import java.util.Stack;
 
 public class LongestValidParentheses {
+    public static void main(String[] args) {
+        System.out.println("Result:"+getLongestValidParentheses(")()()"));
+    }
 //Leetcode32
-    public int getLongestValidParentheses(String s){
+    public static int getLongestValidParentheses(String s){
 
         Stack<Integer> stack= new Stack<>();
         stack.push(-1);
