@@ -9,7 +9,7 @@ public class LeetCode30 {
     public static void main(String[] args) {
 
         String[] words = new String[]{"ab","ba","ba"};
-        System.out.println("result = " + findSubstring("ababaab", words));
+        System.out.println("result = " + findSubstring("ababa", words));
     }
 
     public static List<Integer> findSubstring(String s, String[] words) {

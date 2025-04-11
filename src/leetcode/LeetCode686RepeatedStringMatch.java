@@ -7,9 +7,6 @@ import java.util.Vector;
 public class LeetCode686RepeatedStringMatch {
     public int repeatedStringMatch(String a, String b) {
 
-        List<String> list=new Vector<>();
-        Hashtable<String, String> hashtable = new Hashtable<>();
-
         StringBuilder sb=new StringBuilder(a);
         int count=1;
 
@@ -55,9 +52,6 @@ public class LeetCode686RepeatedStringMatch {
             }
 
         }
-        int board[][]=new int[8][8];
-        int r=board.length;
-        int c=board[0].length;
         return matchCount>0;
 
     }

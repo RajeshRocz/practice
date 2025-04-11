@@ -32,10 +32,10 @@ public class NonDiagnalRotationOfMatrix {
             }
         }
 
-       // System.out.println("\nMatrix after transpose:");
+        System.out.println("\nMatrix after transpose:");
 
-        //printMatrix(matrix);
-
+        printMatrix(matrix);
+/*
         for(int i=0;i<n;i++){
             int l=0,r=n-1;
             while(l<r){
@@ -46,6 +46,20 @@ public class NonDiagnalRotationOfMatrix {
                 }
                 l++;r--;
             }
+        }
+
+ */
+
+        for(int i=0;i<n;i++) {
+            for (int j = 0; j <= n / 2; j++)
+            {
+                if (i != j && i+j != n-1) {
+                    int t = matrix[i][j];
+                    matrix[i][j] = matrix[i][n-1-j];
+                    matrix[i][n-1-j] = t;
+                }
+
+        }
         }
 
     }
@@ -100,6 +114,7 @@ public class NonDiagnalRotationOfMatrix {
     }
 
     public static void main(String[] args) {
+
         int[][] matrix = {
                 {1, 2, 3,5,7},
                 {4, 5, 6,3,5},
@@ -107,6 +122,7 @@ public class NonDiagnalRotationOfMatrix {
                 {3,9,2,2,4},
                 {2,4,7,1,8}
         };
+
 
         System.out.println("Original matrix:");
         printMatrix(matrix);

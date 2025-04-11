@@ -1,7 +1,7 @@
 package leetcode;
 
 public class LeetCode214ShortestPalindrome {
-        public String shortestPalindrome(String s) {
+        public static String shortestPalindrome(String s) {
             String original=s;
             StringBuilder sb=new StringBuilder(s);
             s=sb.reverse().toString();
@@ -32,7 +32,7 @@ public class LeetCode214ShortestPalindrome {
 
     public static void main(String[] args) {
         LeetCode5LongestPalindromeSubstring leetCode5LongestPalindromeSubstring=new LeetCode5LongestPalindromeSubstring();
-        String result=leetCode5LongestPalindromeSubstring.longestPalindrome("racecarb");
+        String result=shortestPalindrome("racecarb");
         System.out.println(result);
     }
 }
