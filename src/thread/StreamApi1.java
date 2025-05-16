@@ -40,7 +40,7 @@ public class StreamApi1 {
         //reverse order
         List<Integer> myList = Arrays.asList(10,15,8,49,25,98,98,32,15);
 
-        List<Integer> reversedList=myList.stream().sorted(Collections.reverseOrder()).toList();
+        List<Integer> reversedList=myList.stream().sorted(Comparator.reverseOrder()).toList();
         System.out.println("Reverse list:"+reversedList);
 
         //swap numbers
